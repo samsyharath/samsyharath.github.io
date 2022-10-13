@@ -1,20 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>Sam Syharath</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins&display=swap">
+    <title>My Responsive Site</title>
 </head>
 <body>
-    <header>
-        <h1>Sam's webpage</h1>
-        <p><a href="about.html">About</a></p>
+    <header class="main-header">
+        <h1 class="name">Sam Syharath</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <article>
-        Hello, and welcome to my site. As you can see, it's currently under construction. Please check back again soon to see what's happening.
-    </article>
-    <article>
-        Contact me at <a href="mailto:samsyharath@gmail.com">samsyharath@gmail.com</a>
-    </article>
-    <hr>
-    <footer> &copy; 2022</footer>
+    <main>
+        <ul id="intro">
+            <li><img id="profile-pic" src="images/responsive-layout-profile.png" alt="Cartoon image of designer"></li>
+            <li id="intro-statement">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put my skills to use!</li>
+        </ul>
+        <br>
+        <div id="portfolio">
+            <h2 id="portfolio">Portfolio</h2>
+            <ul class="portfolio-items">
+                <li id="marketing">
+                    <img src="images/portfolio-1.png">
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                </li>
+                <li id="search">
+                    <img src="images/portfolio-2.png">
+                    <h3>Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                </li>
+                <li id="travel">
+                    <img src="images/portfolio-3.png">
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                </li>
+                <li id="map">
+                    <img src="images/portfolio-4.png">
+                    <h3>Map of Favorite Spots</h3>
+                    <p>This project uses mapping apis to plot pointes for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                </li>
+                <li id="photo">
+                    <img src="images/portfolio-5.png">
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                </li>
+                <li id="calculator">
+                    <img src="images/portfolio-6.png">
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div id="skills">
+            <h2>Skills</h2>
+            <img src="images/responsive-layout-profile.png" alt="Cartoon image of designer">
+            <p>During my professional career as a programmer, I have garnered a variety of skills and experience including:</p>
+            <ul id="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>React</li>
+            </ul>
+        </div>
+        <br>
+        <div id="contact">
+            <h2>Contact</h2>
+            <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+            <p>Phone: +1 (555) 555-5555</p>
+            <p>Email: <a href="mailto:samsyharath@gmail.com">samsyharath@gmail.com</a></p>
+        </div>
+        <hr>
+    </main>    
+    <footer>
+        <ul id="main-footer">
+            <li>Sam Syharath</li>
+            <li><a class="footer-button" href="#top">Home</a></li>
+            <li><a class="footer-button" href="#top">Portfolio</a></li>
+            <li><a class="footer-button" href="#top">Skills</a></li>
+            <li><a class="footer-button" href="#top">Contact</a></li>
+            <li><a id="to-top" href="#top">Back to top</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
